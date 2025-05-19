@@ -5,66 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HODU</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <div>
+        <div class="header-nav" id="header-top">
             <h1><a href="#none"><img src="./img/logo.svg" alt="HODU"></a></h1>
             <nav>
                 <ul>
                     <li><a href="#none">Home</a></li>
                     <li><a href="#none">About</a></li>
                     <li><a href="#none">Support</a></li>
-                    <li><a href="#none">Download</a></li>
+                    <li><a href="#none" class="btn-orng">Download</a></li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <h2>Lorem ipsum dolor sit. <br>
-            Lorem ipsum dolor sit amet consectetur.</h2>
-            <img src="./img/box-cat.png" alt="">
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-        </div>
-        <a href="#none">Download</a>
+        <section class="header-cont">
+            <h2>Lorem Ipsum is simply <br>
+            dummy text of the printing and</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            
+            <a href="#none" class="btn-orng">Download</a>
+        </section>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="main-cont">
+            <figure class="main-figure">
                 <img src="./img/img_4.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus vero reprehenderit ratione.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi a non quae!</p>
-            </div>
+                <figcaption>
+                    <h2>Lorem Ipsum is simply <br>
+                    dummy text of the printing and dummy text</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </figcaption>
+            </figure>
         </section>
-        <section>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, vitae, sit nisi aut reprehenderit eveniet cum unde architecto beatae officia autem voluptatibus. Libero vel sed id nobis voluptate.</p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <img src="./img/img_1.jpg" alt="">
-                <img src="./img/img_2.jpg" alt="">
-                <img src="./img/img_3.jpg" alt="">
-            </div>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,   when an unknown
-                Ipsum is simply dummy text of the printing and typesetting industry. 
-            </p>
-            <a href="#none">Learn More</a>
+        <section class="main-photo">
+            <h2>dummy text of the printing and dummy</h2>
+            <p>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            <div class="photo-list">
+                <ul>
+                    <li><img src="./img/img_1.jpg" alt=""></li>
+                    <li><img src="./img/img_2.jpg" alt=""></li>
+                    <li><img src="./img/img_3.jpg" alt=""></li>
+                </ul>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <a href="#none" class="btn-orng">Learn More</a>
         </section>
     </main>
     <footer>
-        <section class="subcribe">
+        <section>
             <h3>Subscribe to our Blog post</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text </p>
-            <form>
-                <input type="email" placeholder="Enter your E-mail address" required>
-                <button type="submit">Subscribe</button>
+            <form class="subscribe-form">
+                <input type="email" class="subscribe-input" placeholder="Enter your e-mail address" required>
+                <button type="submit" class="btn-orng">Subscribe</button>
             </form>
         </section>
+        <div class="footer-nav">
+            <h2><a href="#none"><img src="./img/logo.svg" alt=""></a></h2>
+            <ul>
+                <li><a href="#none"><span class="a11y">블로그</span></a></li>
+                <li><a href="#none"><span class="a11y">인스타그램</span></a></li>
+                <li><a href="#none"><span class="a11y">페이스북</span></a></li>
+                <li><a href="#none"><span class="a11y">유튜브</span></a></li>
+            </ul>
+        </div>
     </footer>
+    <a href="#header-top" class="link-top"><span class="a11y">최상단으로이동</span></a>
 </body>
 </html>
