@@ -1,13 +1,127 @@
-@font-face {
-    font-family: 'SpoqaHanSansNeo-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+html {
+  font-family: 'Spoqa Han Sans Neo', sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.a11y {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip-path: inset(50%);
+}
+
+.btn-orng {
+  background-color: #D97652;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 200;
+  border-radius: 40px;
+  color: white;
 }
 
 body {
-    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
 
 header {
-    background-color: #F2E9D8;
+  height: 980px;
+  background-color: #f2e9d8;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.header-nav {
+  display: flex;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: #f2e9d8;
+  padding: 31px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+nav>ul {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(../img/box-cat.png) bottom right no-repeat;
+    height: 980px;
+    margin: 0 300px;
+    gap: 40px;
+}
+.header-cont h2 {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 700;
+}
+.header-cont p {
+    max-width: 439px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+
+
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 0;
+  background-color: #fff;
+}
+
+.main-figure {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-figure img {
+  width: 660px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+  display: block;
+  flex-shrink: 0;
+}
+
+.main-figure figcaption {
+  width: 510px;
+}
+
+.main-figure h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.main-figure p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  max-width: 510px;
+  margin: 0;
 }
